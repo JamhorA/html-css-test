@@ -3,6 +3,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 :root{
     --main-color: #26a8a4;
@@ -14,8 +16,6 @@ html {
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #26a8a4;
-    margin: 0;
-    padding: 0;
 }
 a{
     text-decoration: none;
@@ -50,7 +50,7 @@ ul {
      /* Large */     
 @media (min-width: 1200px){
     .container {
-        width: 1170px;
+        width: 1200px;
     }
 }  
 .main-title {
@@ -140,7 +140,12 @@ ul {
 }
 
 /* End Header  */
-/* Start section  */
+/* Start Main  */
+main {
+    position: relative;
+    min-height: 100vh;
+}
+
 .section {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -249,7 +254,6 @@ ul {
     color: white;
 }
 .footer .box .links li a {
-    padding-left: 10px;
     color: #b9b9b9;
 }
 .footer .box .line {
@@ -275,8 +279,8 @@ ul {
     padding: 25px 0;
     text-align: center;
     color: white;
-    margin: 50px 0 0;
-    border-top: 1px solid #444;
+    margin:0 auto;
+    max-width: 1200px;
 }
 /* End Footer  */
 /* Start Animation */
