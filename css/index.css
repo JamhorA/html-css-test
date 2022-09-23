@@ -49,7 +49,6 @@ ul {
     font-size: 30px;
     width: fit-content;
     z-index: 1;
-    
 }
 .main-title:hover {
     background-color: var(--main-color-alt);
