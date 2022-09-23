@@ -1,6 +1,4 @@
-
-
-#hamburger-input:checked ~ label::before {
+#hamburger-input:checked~label::before {
     content: '\f00d';
 }
 
@@ -25,7 +23,7 @@
     display: none;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 18px;
+    padding: 0px 18px;
     text-decoration: none;
     font-size: 40px;
 }
@@ -87,7 +85,7 @@
         left: 0;
     }
 
-    #hamburger-input:checked ~ .overlay {
+    #hamburger-input:checked~.overlay {
         visibility: visible;
     }
 
