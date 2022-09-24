@@ -1,4 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #a7a7a7;
+}
+
+.section .box {
+  background-color: #e8e8e8;
+}
+
+.main-title:hover {
+  background-color: rgb(126, 126, 126);
 }/*# sourceMappingURL=product.css.map */
