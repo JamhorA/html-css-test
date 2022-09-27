@@ -27,7 +27,7 @@
             <ul>
               <li>By <span class="hero-text--author">John Doe</span></li>
               <li>September 23, 2022</li>
-              <li>3 Comments</li>
+              <li><a href="">3 comments</a></li>
             </ul>
           </div>
         </div>
@@ -128,28 +128,106 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="blog-form">
               <h4>Leave A Comment</h4>
               <form action="#">
                 <div class="row">
                   <div class="col-lg-4 col-md-4">
-                    <input type="text" placeholder="Name">
+                    <label for="name">Name <em>&#x2a;</em></label>
+                    <input id="name" name="name" required="" type="text" placeholder="Name">
                   </div>
                   <div class="col-lg-4 col-md-4">
-                    <input type="text" placeholder="Email">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" required="" type="email" placeholder="Email" />
                   </div>
                   <div class="col-lg-4 col-md-4">
-                    <input type="text" placeholder="Phone">
+                    <label for="phone">
+                      Phone
+                    </label>
+                    <input id="phone" name="phone" required="" type="phone" placeholder="Phone" />
                   </div>
                   <div class="col-lg-12 text-center">
-                    <textarea placeholder="Comment"></textarea>
-                    <button type="submit">Post Comment</button>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required="" rows="4" placeholder="Message"></textarea>
+                    <button type="submit" class="site-btn">Post Comment</button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
+
+        <!-- comment -->
+        <div class="container accordion  mt-5">
+          <div class="row  d-flex justify-content-center">
+            <div class="col-lg-6">
+              <div class="headings d-flex justify-content-between align-items-center mb-3">
+                <h5>Comments(3)</h5>
+              </div>
+              <div class="card p-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="user d-flex flex-row align-items-center">
+                    <img src="" width="30" class="user-img rounded-circle mr-2">
+                    <span><small class="font-weight-bold text-primary">Name</small> 
+                      <small class="font-weight-bold">Lorem...</small></span>
+                  </div>
+                  <small>2 days ago</small>
+                </div>
+                <div class="action d-flex justify-content-between mt-2 align-items-center">  
+                  <div class="reply px-4"> 
+                    <span class="dots"></span>
+                    <small>Reply</small>
+                  </div>
+                  <div class="icons align-items-center">
+                    <i class="fa fa-check-circle-o check-icon"></i>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="card p-3 mt-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="user d-flex flex-row align-items-center"> 
+                    <img src="" width="30" class="user-img rounded-circle mr-2">
+                    <span><small class="font-weight-bold text-primary">Name</small> 
+                      <small class="font-weight-bold">Lorem...</small></span>
+                  </div>
+                  <small>3 days ago</small>
+                </div>
+
+                <div class="action d-flex justify-content-between mt-2 align-items-center">
+                  <div class="reply px-4">
+                    <span class="dots"></span>
+                    <small>Reply</small>
+                  </div>
+                  <div class="icons align-items-center">
+                    <i class="fa fa-check-circle-o check-icon text-primary"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card p-3 mt-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="user d-flex flex-row align-items-center">
+                    <img src="" width="30" class="user-img rounded-circle mr-2">
+                    <span><small class="font-weight-bold text-primary">Name</small> 
+                      <small class="font-weight-bold">Lorem </small></span>
+                  </div>
+                  <small>3 days ago</small>    
+                </div>
+                <div class="action d-flex justify-content-between mt-2 align-items-center">
+                  <div class="reply px-4">
+                    <span class="dots"></span>
+                    <small>Reply</small>
+                  </div>
+                  <div class="icons align-items-center">
+                    <i class="fa fa-check-circle-o check-icon text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- comment end -->
       </div>
     </div>
   </section>

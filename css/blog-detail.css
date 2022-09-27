@@ -9,6 +9,8 @@
   --quote-bg: #e53637;
   --quote-text: #e53637;
   --author-section-top: #e5e5e5;
+  --link-buttons: #ebebeb;
+  --link-button-text: #b7b7b7;
 }
 
 /*---------------------
@@ -228,7 +230,7 @@
 /* Links to next and previous blog*/
 .blog-links--buttons {
   display: block;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--link-buttons);
   padding: 1.6rem 2.2rem 2.2rem;
   margin-bottom: 2.2rem;
 }
@@ -243,7 +245,7 @@
 }
 
 .blog-links--buttons p {
-  color: #b7b7b7;
+  color: var(--link-button-text);
   margin-bottom: 0.8rem;
 }
 
@@ -255,8 +257,61 @@
 }
 
 .blog-links--buttons h5 {
-  color: #111111;
+  color: #111;
   font-size: 1.6rem;
   line-height: 2.2rem;
   font-weight: 700;
 }
+
+/****************/
+/***** Form *****/
+/****************/
+.blog-form {
+  background: #f3f2ee;
+  border-radius: 0.3rem;
+  padding: 1.2rem;
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.blog-form h4 {
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.blog-form form input {
+  height: 4.2rem;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: #b7b7b7;
+  margin-bottom: 2.2rem;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+.blog-form form input:focus {
+  border-color: #000000;
+  border-color: #EC9846;
+}
+
+.blog-form form textarea {
+  height: 10rem;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding-left: 1.2rem;
+  padding-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #b7b7b7;
+  margin-bottom: 2rem;
+  resize: none;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+/* end form */
