@@ -19,6 +19,24 @@ body {
   color: rgb(40, 40, 40);
 }
 
+/* Name? .container */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   padding-left: 0;
+}
+
+.form-text {
+  font-size: medium;
+  color: rgb(0, 0, 0);
+}
+
+.form-label {
+  font-size: small;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
 }/*# sourceMappingURL=product.css.map */
