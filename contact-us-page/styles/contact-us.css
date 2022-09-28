@@ -28,15 +28,6 @@
   align-items: center;
 }
 
-.glass-effect {
-  background: rgba(0, 0, 0, 0.36);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border: 1px solid rgba(0, 0, 0, 0.51);
-}
-
 @media (max-width: 1200px) {
   .section-max-size {
     height: 100vh;
@@ -56,8 +47,13 @@
 }
 
 .glass-button {
-  display: inline-block;
+  border-radius: 15px;
+}
+.glass-button a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
   padding: 24px 32px;
+  display: inline-block;
   border: 0;
   text-decoration: none;
   -webkit-text-decoration-color: transparent;
@@ -71,15 +67,11 @@
   cursor: pointer;
   text-transform: uppercase;
 }
-.glass-button a {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-}
-.glass-button:active {
+.glass-button a:active {
   background-color: rgba(255, 255, 255, 0.39);
   color: rgba(255, 255, 255, 0.8);
 }
-.glass-button:hover {
+.glass-button a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -150,9 +142,29 @@
   grid-column-end: span 4;
   display: flex;
   flex-direction: column;
-  background-color: #39393b;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+}
+
+.long-card {
+  grid-column-start: 9;
+  grid-column-end: span 4;
+  grid-row-start: 1;
+  grid-row-end: span 4;
+}
+.long-card .card__image-container {
+  height: 100%;
+}
+.long-card img {
+  width: auto !important;
+  height: 100%;
+}
+
+.square-card {
+  grid-column-start: 0;
+  grid-column-end: span 8;
+  grid-row-start: 2;
+  grid-row-end: span 3;
 }
 
 .card:hover {
@@ -198,6 +210,9 @@
 @media only screen and (max-width: 1000px) {
   .card {
     grid-column: span 6;
+  }
+  .hide-on-md {
+    display: none;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -251,5 +266,14 @@
   }
 }
 body {
-  background: linear-gradient(-30deg, var(--main-color-alt) 0%, #00000a 25%, var(--main-color) 50%, #000000 100%);
+  background: linear-gradient(-30deg, var(--main-color-alt) 0%, #00000a 25%, var(#26a8a4) 50%, #000000 100%);
+}
+
+.glass-effect {
+  background: rgba(0, 0, 0, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(0, 0, 0, 0.51);
 }/*# sourceMappingURL=contact-us.css.map */
