@@ -80,9 +80,11 @@
                                 example based on Apple’s marketing pages.</p>
                         </div>
                         <div class="col-12">
-                            <div class="button">
-                                <a class="glass-effect" href="#info">Find out
-                                    more</a>
+                            <div>
+                                <div class="link-button">
+                                    <a href="#info">Find out
+                                        more</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -100,7 +102,7 @@
                         <div class="anchor" id="info"></div>
                     </div>
                 </section>
-                <section class="info-section glass-effect">
+                <section class="info-section card-effect">
                     <div class="container-fluid marketing my-2 my-sm-4">
                         <div class="row">
                             <div class="col-lg-4 mb-1 mb-sm-3">
@@ -191,8 +193,8 @@
                             </div>
                             <div class="d-flex justify-content-center my-0
                                 my-sm-5 my-md-3">
-                                <div class="button">
-                                    <a class="glass-effect d-xl-none"
+                                <div class="link-button">
+                                    <a class="d-xl-none"
                                         href="#contact">Contact us now</a>
                                 </div>
                             </div>
@@ -202,7 +204,7 @@
                 </section>
                 <section class="gallery-section">
                     <div class="cards">
-                        <div class="card glass-effect">
+                        <div class="card card-effect">
                             <div class="card__image-container">
                                 <img
                                     src="./assets/pexels-torsten-dettlaff-193003.jpg"
@@ -219,7 +221,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card glass-effect">
+                        <div class="card card-effect">
                             <div class="card__image-container">
                                 <img
                                     src="./assets/pexels-parag-deshmukh-577769.jpg"
@@ -237,7 +239,7 @@
                             </div>
                         </div>
 
-                        <div class="card square-card glass-effect">
+                        <div class="card square-card card-effect">
                             <div class="card__image-container">
                                 <img
                                     src="./assets/pexels-mart-production-7709189.jpg"
@@ -254,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card long-card hide-on-md glass-effect">
+                        <div class="card long-card hide-on-md card-effect">
                             <div class="card__image-container">
                                 <img
                                     src="./assets/grid-pictures/long-picture.jpg"
@@ -274,7 +276,7 @@
                     </div>
                 </section>
                 <section id="contact" class="contact-section
-                    glass-effect">
+                    card-effect">
                     <div class="container my-5">
 
                         <!-- Bootstrap 5 starter form -->
@@ -292,18 +294,48 @@
                             </div>
 
                             <!-- Email address input -->
+                            <div class="mb-0 mb-lg-3">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3 mb-lg-0">
+                                        <label class="form-label"
+                                            for="emailAddress">Email
+                                            Address</label>
+                                        <input class="form-control"
+                                            id="emailAddress"
+                                            type="email" placeholder="Email
+                                           "
+                                            data-sb-validations="required,
+                                            email" />
+                                        <div class="invalid-feedback"
+                                            data-sb-feedback="emailAddress:required">Email
+                                            Address is required.</div>
+                                        <div class="invalid-feedback"
+                                            data-sb-feedback="emailAddress:email">Email
+                                            Address Email is not valid.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3 mb-lg-0">
+
+                                        <label class="form-label" for="name">Number</label>
+                                        <input class="form-control" id="name"
+                                            type="text" placeholder="Number"
+                                            data-sb-validations="required" />
+                                        <div class="invalid-feedback"
+                                            data-sb-feedback="name:required">Name
+                                            is
+                                            required.</div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="mb-3">
-                                <label class="form-label" for="emailAddress">Email
-                                    Address</label>
-                                <input class="form-control" id="emailAddress"
-                                    type="email" placeholder="Email Address"
-                                    data-sb-validations="required, email" />
+                                <label class="form-label" for="name">Subject</label>
+                                <input class="form-control" id="name"
+                                    type="text" placeholder="Subject"
+                                    data-sb-validations="required" />
                                 <div class="invalid-feedback"
-                                    data-sb-feedback="emailAddress:required">Email
-                                    Address is required.</div>
-                                <div class="invalid-feedback"
-                                    data-sb-feedback="emailAddress:email">Email
-                                    Address Email is not valid.</div>
+                                    data-sb-feedback="name:required">Name is
+                                    required.</div>
                             </div>
 
                             <!-- Message input -->
@@ -331,8 +363,8 @@
                             </div>
 
                             <!-- Form submit button -->
-                            <div class="d-grid glass-effect">
-                                <button class="btn btn-primary btn-lg disabled"
+                            <div class="d-grid">
+                                <button class="btn btn-lg submit-button"
                                     id="submitButton" type="submit">Submit</button>
                             </div>
 
@@ -344,98 +376,69 @@
             </main>
             <!-- End Section  -->
             <!-- Start Footer  -->
-            <div class="container">
-                <footer class="py-5">
-                    <div class="row">
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Section</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Home</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Features</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Pricing</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">FAQs</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">About</a></li>
-                            </ul>
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="box">
+                        <h3>Positionering CSS</h3>
+                        <h4>Social Media</h4>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="facebook">
+                                    <i class="fab fa-facebook-f">FA</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter">
+                                    <i class="fab fa-twitter">TW</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="youtube">
+                                    <i class="fab fa-youtube">YO</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="instagram">
+                                    <i class="fab fa-instagram">IN</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h4>Links</h4>
+                        <ul class="links">
+                            <li><a href="#">Import Link 1</a></li>
+                            <li><a href="#">Import Link 2</a></li>
+                            <li><a href="#">Import Link 3</a></li>
+                            <li><a href="#">Import Link 4</a></li>
+                            <li><a href="#">Import Link 5</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h4>Kontakt</h4>
+                        <div class="line">
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            <div class="info">Drottninggatan 22, 803 11 Gävle.</div>
                         </div>
-
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Section</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Home</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Features</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Pricing</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">FAQs</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">About</a></li>
-                            </ul>
+                        <div class="line">
+                            <i class="fas fa-clock fa-fw"></i>
+                            <div class="info"> Öppeettider 09:00 - 18:00 Se alla
+                                dagar.</div>
                         </div>
-
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>Section</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Home</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Features</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">Pricing</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">FAQs</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-muted">About</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-5 offset-md-1 mb-3">
-                            <form>
-                                <h5>Subscribe to our newsletter</h5>
-                                <p>Monthly digest of what's new and exciting
-                                    from us.</p>
-                                <div class="d-flex flex-column flex-sm-row w-100
-                                    gap-2">
-                                    <label for="newsletter1"
-                                        class="visually-hidden">Email address</label>
-                                    <input id="newsletter1" type="text"
-                                        class="form-control" placeholder="Email
-                                        address">
-                                    <button class="btn btn-primary"
-                                        type="button">Subscribe</button>
-                                </div>
-                            </form>
+                        <div class="line">
+                            <i class="fas fa-phone-volume fa-fw"></i>
+                            <div class="info">
+                                <span>+46701234567</span>
+                                <span>+46701234567</span>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <p class="copyright">Made With &lt;3 By Positionering CSS</p>
+            </div>
 
-                    <div class="d-flex flex-column flex-sm-row
-                        justify-content-between py-4 my-4 border-top">
-                        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-                        <ul class="list-unstyled d-flex">
-                            <li class="ms-3"><a class="link-dark" href="#"><svg
-                                        class="bi" width="24" height="24"><use
-                                            xlink:href="#twitter"/></svg></a></li>
-                                <li class="ms-3"><a class="link-dark" href="#"><svg
-                                            class="bi" width="24" height="24"><use
-                                                xlink:href="#instagram"/></svg></a></li>
-                                    <li class="ms-3"><a class="link-dark"
-                                            href="#"><svg class="bi" width="24"
-                                                height="24"><use
-                                                    xlink:href="#facebook"/></svg></a></li>
-                                    </ul>
-                                </div>
-                            </footer>
-                        </div>
-
-
-                        <!-- End Footer  -->
-                        <script
-                            src="../contact-us-page/assets/dist/js/bootstrap.bundle.min.js"></script>
-                    </body>
-                </html>
+            <!-- End Footer  -->
+            <script
+                src="../contact-us-page/assets/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>

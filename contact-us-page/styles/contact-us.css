@@ -91,12 +91,8 @@ section {
   }
 }
 #contactForm {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
-}
-#contactForm .row {
-  width: 100%;
-  height: 100%;
 }
 
 .text--medium {
@@ -247,21 +243,30 @@ body {
   background: linear-gradient(-30deg, darkslateblue 0%, #00000a 25%, #26a8a4 50%, #000000 100%);
 }
 
-.glass-effect {
-  background: rgba(0, 0, 0, 0.36);
+.card-effect {
+  background: rgba(94, 92, 92, 0.39);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.51);
 }
 
-.button {
+.link-button {
+  background: rgba(0, 0, 0, 0.51);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.51);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
-.button a {
-  color: rgba(255, 255, 255, 0.8);
+.link-button a {
+  color: #ffffff;
   font-size: 14px;
   padding: 24px 32px;
   display: inline-block;
@@ -274,10 +279,40 @@ body {
   cursor: pointer;
   text-transform: uppercase;
 }
-.button a:active {
+.link-button a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.link-button a:active {
   background-color: rgba(255, 255, 255, 0.39);
   color: rgba(255, 255, 255, 0.8);
 }
-.button a:hover {
+
+.submit-button {
+  background: rgba(0, 0, 0, 0.51);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.51);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 24px 32px;
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.submit-button:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.submit-button:active {
+  background-color: rgba(255, 255, 255, 0.39);
   color: rgba(255, 255, 255, 0.8);
 }/*# sourceMappingURL=contact-us.css.map */
