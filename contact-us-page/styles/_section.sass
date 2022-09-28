@@ -1,0 +1,37 @@
+section
+  
+  position: relative
+  overflow: hidden
+
+  @include flexCenter
+
+  @media (min-width: 1200px) 
+    height: auto
+    width: auto
+
+  @media (max-width: 1200px) 
+    min-height: 100vh
+
+.anchor 
+  height: 72px
+  width: 100%
+  position: absolute
+  bottom: -1px
+  left: 0
+  z-index: -1
+
+
+.head-section
+  min-height: 800px
+
+.info-section
+  min-height: 800px
+  @media (max-width:480px)
+    p
+     font-size: 0.9rem
+
+.gallery-section
+  display: block
+
+
+

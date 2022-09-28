@@ -1,0 +1,35 @@
+@import "./_variable"
+@import "./section"
+@import "./svg"
+@import "./contactForm"
+@import "./gallery"
+
+body 
+  background: linear-gradient(-30deg, $secondBackgroundColor 0%,#00000a 25%, $mainBackgroundColor 50%,#000000 100% )
+
+.glass-effect 
+    background:  $glassColor
+    border-radius: 16px
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+    overflow: hidden
+    border: 1px solid $glassBorderColor
+    
+.button
+    @include flexCenter
+    a 
+      color: rgba(255,255,255,0.8)
+      font-size: 14px
+      padding: 24px 32px
+      display: inline-block
+      border: 0
+      text-decoration: none
+      text-decoration-color: transparent
+      border-radius: 15px
+      letter-spacing: 2px
+      cursor: pointer
+      text-transform: uppercase
+    a:active 
+      background-color: rgba(255, 255, 255, 0.39)
+      color: rgba(255,255,255,0.8)
+    a:hover 
+      color: rgba(255,255,255,0.8)

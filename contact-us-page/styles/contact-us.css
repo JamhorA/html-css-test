@@ -1,78 +1,53 @@
-.head-section {
-  height: 100vh;
+section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 1200px) {
-  .head-section h1 {
-    font-size: 4rem;
+  section {
+    height: auto;
+    width: auto;
   }
 }
-.head-section .col-12 {
-  text-align: center;
-}
-.head-section .container {
-  height: 100%;
-}
-.head-section .row {
-  justify-content: center;
-  height: 100%;
-  flex-direction: column;
-}
-.head-section svg {
-  position: absolute;
-  left: 0;
-  bottom: 25px;
-  width: 100%;
-}
-
-.contact-section {
-  align-items: center;
-}
-
 @media (max-width: 1200px) {
-  .section-max-size {
-    height: 100vh;
+  section {
+    min-height: 100vh;
   }
 }
-@media (max-width: 375px) {
-  .text-xs {
-    font-size: 0.8rem;
-  }
-}
+
 .anchor {
   height: 72px;
   width: 100%;
   position: absolute;
   bottom: -1px;
   left: 0;
+  z-index: -1;
 }
 
-.glass-button {
-  border-radius: 15px;
+.head-section {
+  min-height: 800px;
 }
-.glass-button a {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  padding: 24px 32px;
-  display: inline-block;
-  border: 0;
-  text-decoration: none;
-  -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
-  letter-spacing: 2px;
-  cursor: pointer;
-  text-transform: uppercase;
+
+.info-section {
+  min-height: 800px;
 }
-.glass-button a:active {
-  background-color: rgba(255, 255, 255, 0.39);
-  color: rgba(255, 255, 255, 0.8);
+@media (max-width: 480px) {
+  .info-section p {
+    font-size: 0.9rem;
+  }
 }
-.glass-button a:hover {
-  color: rgba(255, 255, 255, 0.8);
+
+.gallery-section {
+  display: block;
+}
+
+.fixed-pos {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 100%;
 }
 
 .downArrow {
@@ -83,28 +58,30 @@
 
 .bounce {
   -webkit-animation: bounce 3s infinite;
-  animation: bounce 3s infinite;
+          animation: bounce 3s infinite;
 }
+
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-60px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-35px);
   }
 }
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-60px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-35px);
   }
 }
 @media (max-width: 375px) {
@@ -127,7 +104,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #ecf0f1;
+  color: #ffffff;
 }
 
 .cards {
@@ -148,9 +125,10 @@
 
 .long-card {
   grid-column-start: 9;
-  grid-column-end: span 4;
+  grid-column-end: span 5;
   grid-row-start: 1;
   grid-row-end: span 4;
+  height: 100%;
 }
 .long-card .card__image-container {
   height: 100%;
@@ -216,7 +194,7 @@
   }
 }
 @media only screen and (max-width: 700px) {
-  main {
+  .gallery-section {
     grid-gap: 20px;
   }
   .card {
@@ -224,7 +202,7 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  main {
+  .gallery-section {
     grid-template-columns: 10px repeat(6, 1fr) 10px;
     grid-gap: 10px;
   }
@@ -248,7 +226,7 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
-    color: #ecf0f1;
+    color: #ffffff;
   }
   .card__content {
     margin-bottom: 10px;
@@ -266,7 +244,7 @@
   }
 }
 body {
-  background: linear-gradient(-30deg, var(--main-color-alt) 0%, #00000a 25%, var(#26a8a4) 50%, #000000 100%);
+  background: linear-gradient(-30deg, darkslateblue 0%, #00000a 25%, #26a8a4 50%, #000000 100%);
 }
 
 .glass-effect {
@@ -274,6 +252,32 @@ body {
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  -webkit-backdrop-filter: blur(0px);
   border: 1px solid rgba(0, 0, 0, 0.51);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  padding: 24px 32px;
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.button a:active {
+  background-color: rgba(255, 255, 255, 0.39);
+  color: rgba(255, 255, 255, 0.8);
+}
+.button a:hover {
+  color: rgba(255, 255, 255, 0.8);
 }/*# sourceMappingURL=contact-us.css.map */
