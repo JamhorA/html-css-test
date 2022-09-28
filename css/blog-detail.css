@@ -315,3 +315,63 @@
 }
 
 /* end form */
+
+/*******************/
+/***** Comment *****/
+/*******************/
+.container {
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  border-radius: 4px;
+}
+
+.dots {
+  height: 4px;
+  width: 4px;
+  margin-bottom: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.badge {
+  padding: 7px;
+  padding-right: 9px;
+  padding-left: 1rem;
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+}
+
+.user-img {
+  margin-top: 4px;
+}
+
+.check-icon {
+  font-size: 1rem;
+  color: #c3bfbf;
+  top: 1px;
+  position: relative;
+  margin-left: 3px;
+}
+
+.comment-name {
+  padding-left: 0.4rem;
+}
+
+.icons i {
+  margin-left: 0.5rem
+}
+
+.reply {
+   font-weight: 500; 
+  margin-left: 0.8rem;
+  color: var(--quote-text)
+}
+
+.reply small:hover {
+  color: var(--link-button-text);
+  cursor: pointer;
+}
