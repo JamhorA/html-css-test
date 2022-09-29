@@ -36,11 +36,8 @@ nav {
   width: 100%;
 }
 nav ul {
-  display: flex;
+  display: block;
   justify-content: space-between;
-}
-nav div {
-  display: flex;
 }
 nav a {
   justify-content: center;
@@ -52,8 +49,16 @@ nav a {
 nav a:hover {
   background-color: darkslateblue;
   border-radius: 10px;
-  -webkit-animation: header-nav 1s infinite;
-          animation: header-nav 1s infinite;
+  -webkit-animation: header 1s infinite;
+          animation: header 1s infinite;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
 }
 
 header {
@@ -76,11 +81,17 @@ header .container {
   color: white;
   margin: auto;
   max-width: 1200px;
-  min-height: 72px;
+  height: 72px;
   align-items: center;
 }
 header h1 {
   margin: auto;
+}
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
 }
 
 @media (max-width: 768px) {
@@ -120,6 +131,14 @@ section {
   position: relative;
 }
 
+.section h3 {
+  justify-content: space-around;
+}
+.section p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+  color: #777;
+}
 .section .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -137,14 +156,6 @@ section {
 }
 .section .content {
   padding: 20px;
-}
-.section h3 {
-  justify-content: space-around;
-}
-.section p {
-  margin: 10px 0 0;
-  line-height: 1.5;
-  color: #777;
 }
 
 /* End section  */
@@ -252,12 +263,12 @@ footer .info {
 }
 /* End Footer  */
 /* Start Animation */
-@-webkit-keyframes header-nav {
+@-webkit-keyframes header {
   10% {
     border-radius: 20px;
   }
 }
-@keyframes header-nav {
+@keyframes header {
   10% {
     border-radius: 20px;
   }

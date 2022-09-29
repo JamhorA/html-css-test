@@ -32,19 +32,21 @@
 
     
 @media screen and (max-width: 768px)
+    nav ul
+        opacity: 0
 
-    #hamburger-input:checked+#hamburger-menu #sidebar-menu
-        visibility: visible
-        left: 0
+        a:hover
+         text-decoration: underline
     
-    nav ul div
-        display: none
-    
+    //when hamburger menu all links float left
+    .float-right
+        float: left
+        
     #hamburger-menu 
         display: flex
     
-    #hamburger-input:checked~ nav ul div 
-        display: block
+    #hamburger-input:checked~ nav ul 
+        opacity: 1
     
     #hamburger-input:checked~ .overlay 
         visibility: visible

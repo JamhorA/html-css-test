@@ -6,7 +6,6 @@
     margin: 0
     padding: 0
 
-
 :root
     --main-color: #26a8a4
     --main-color-alt: darkslateblue
@@ -20,10 +19,8 @@ body
     font-family: 'Roboto', sans-serif
     background-color: #26a8a4
 
-
 a 
     text-decoration: none
-
 
 ul 
     list-style: none
@@ -31,21 +28,14 @@ ul
     padding: 0
 /*  End Global Rules   */
 /* Start Header  */
-
-    
 nav 
-    
     justify-content: space-between
     width: 100%
 
     ul
-        display: flex
+        display: block
         justify-content: space-between
     
-    div 
-        display: flex
-
-
     a 
         justify-content: center
         align-items: center
@@ -56,8 +46,13 @@ nav
     a:hover
         background-color: darkslateblue
         border-radius: 10px
-        animation: header-nav 1s infinite
-        
+        animation: header 1s infinite
+
+.float-right
+    float: right
+
+.float-left
+    float: left 
 
 header 
     background-color: var(--main-color-alt)
@@ -79,11 +74,17 @@ header
         color: white
         margin: auto
         max-width: 1200px
-        min-height: 72px
+        height: 72px
         align-items: center
 
     h1
         margin: auto
+
+    a
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 72px
 
 
 @media (max-width: 768px) 
@@ -119,6 +120,14 @@ section
 
 .section 
     
+    h3
+        justify-content: space-around
+
+    p
+        margin: 10px 0 0
+        line-height: 1.5
+        color: #777
+
     .container
         display: grid
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
@@ -134,14 +143,7 @@ section
         
     .content
         padding: 20px
-    
-    h3
-        justify-content: space-around
 
-    p
-        margin: 10px 0 0
-        line-height: 1.5
-        color: #777
 /* End section  */
 /* Start Footer  */
 footer
@@ -251,7 +253,7 @@ footer
     
 /* End Footer  */
 /* Start Animation */
-@keyframes header-nav
+@keyframes header
     10%
         border-radius: 20px
     
