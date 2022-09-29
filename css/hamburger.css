@@ -30,12 +30,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  #hamburger-input:checked + #hamburger-menu #sidebar-menu {
-    visibility: visible;
-    left: 0;
-  }
   nav ul div {
     display: none;
+  }
+  nav ul div a:hover {
+    text-decoration: underline;
   }
   #hamburger-menu {
     display: flex;
