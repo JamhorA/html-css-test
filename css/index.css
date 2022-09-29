@@ -36,11 +36,8 @@ nav {
   width: 100%;
 }
 nav ul {
-  display: flex;
+  display: block;
   justify-content: space-between;
-}
-nav div {
-  display: flex;
 }
 nav a {
   justify-content: center;
@@ -54,6 +51,14 @@ nav a:hover {
   border-radius: 10px;
   -webkit-animation: header 1s infinite;
           animation: header 1s infinite;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
 }
 
 header {
@@ -76,7 +81,7 @@ header .container {
   color: white;
   margin: auto;
   max-width: 1200px;
-  min-height: 72px;
+  height: 72px;
   align-items: center;
 }
 header h1 {

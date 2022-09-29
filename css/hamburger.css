@@ -30,17 +30,20 @@
 }
 
 @media screen and (max-width: 768px) {
-  nav ul div {
-    display: none;
+  nav ul {
+    opacity: 0;
   }
-  nav ul div a:hover {
+  nav ul a:hover {
     text-decoration: underline;
+  }
+  .float-right {
+    float: left;
   }
   #hamburger-menu {
     display: flex;
   }
-  #hamburger-input:checked ~ nav ul div {
-    display: block;
+  #hamburger-input:checked ~ nav ul {
+    opacity: 1;
   }
   #hamburger-input:checked ~ .overlay {
     visibility: visible;
