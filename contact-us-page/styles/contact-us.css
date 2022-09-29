@@ -1,6 +1,5 @@
 section {
   position: relative;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,11 +26,13 @@ section {
 }
 
 .head-section {
-  min-height: 800px;
+  min-height: 100vh;
 }
 
 .info-section {
-  min-height: 800px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media (max-width: 480px) {
   .info-section p {
@@ -94,6 +95,9 @@ section {
   max-width: 600px;
   margin: auto;
 }
+#contactForm button {
+  background: darkslateblue;
+}
 
 .text--medium {
   font-family: "Open Sans", sans-serif;
@@ -118,6 +122,9 @@ section {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+.card:hover {
+  transform: scale(1.04);
+}
 
 .long-card {
   grid-column-start: 9;
@@ -139,10 +146,6 @@ section {
   grid-column-end: span 8;
   grid-row-start: 2;
   grid-row-end: span 3;
-}
-
-.card:hover {
-  transform: translateY(-7px);
 }
 
 .card__image-container {
@@ -174,11 +177,18 @@ section {
   align-items: center;
 }
 
-.card__price {
-  margin-left: auto;
-  padding: 5px 20px;
+.card__button {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+.card__button a {
+  margin-left: auto !important;
+  padding: 5px 20px !important;
   background-color: #303032;
   border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -315,4 +325,18 @@ body {
 .submit-button:active {
   background-color: rgba(255, 255, 255, 0.39);
   color: rgba(255, 255, 255, 0.8);
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }/*# sourceMappingURL=contact-us.css.map */

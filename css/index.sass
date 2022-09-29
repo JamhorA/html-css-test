@@ -1,7 +1,5 @@
 /*  Start Global Rules   */
 *
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
     box-sizing: border-box
     margin: 0
     padding: 0
@@ -10,10 +8,8 @@
     --main-color: #26a8a4
     --main-color-alt: darkslateblue
 
-
 html
     scroll-behavior: smooth
-
 
 body 
     font-family: 'Roboto', sans-serif
@@ -21,11 +17,26 @@ body
 
 a 
     text-decoration: none
+    border-radius: 16px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &:hover
+        background-color: darkslateblue
+        animation: header 1s infinite
+    &:visited
+        color: black
+    &:link
+        color: white
+    &:active
+        background-color: darkslateblue
 
 ul 
     list-style: none
     margin: 0
     padding: 0
+
 /*  End Global Rules   */
 /* Start Header  */
 nav 
@@ -37,16 +48,13 @@ nav
         justify-content: space-between
     
     a 
-        justify-content: center
-        align-items: center
         height: 72px
-        color: white
         padding: 0 16px
 
-    a:hover
+
+    .active
         background-color: darkslateblue
-        border-radius: 10px
-        animation: header 1s infinite
+        
 
 .float-right
     float: right
@@ -72,19 +80,14 @@ header
         padding-left: 15px
         padding-right: 15px
         color: white
-        margin: auto
         max-width: 1200px
         height: 72px
         align-items: center
+        margin-left: auto
+        margin-right: auto
 
     h1
-        margin: auto
-
-    a
-        display: flex
-        justify-content: center
-        align-items: center
-        height: 72px
+        margin: auto        
 
 
 @media (max-width: 768px) 
@@ -111,7 +114,6 @@ main
     z-index: 1
 
     &:hover
-        background-color: var(--main-color-alt)
         animation: main-title 1.5s infinite
 
 section

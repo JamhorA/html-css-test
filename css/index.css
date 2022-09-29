@@ -21,6 +21,24 @@ body {
 
 a {
   text-decoration: none;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a:hover {
+  background-color: darkslateblue;
+  -webkit-animation: header 1s infinite;
+          animation: header 1s infinite;
+}
+a:visited {
+  color: black;
+}
+a:link {
+  color: white;
+}
+a:active {
+  background-color: darkslateblue;
 }
 
 ul {
@@ -40,17 +58,11 @@ nav ul {
   justify-content: space-between;
 }
 nav a {
-  justify-content: center;
-  align-items: center;
   height: 72px;
-  color: white;
   padding: 0 16px;
 }
-nav a:hover {
+nav .active {
   background-color: darkslateblue;
-  border-radius: 10px;
-  -webkit-animation: header 1s infinite;
-          animation: header 1s infinite;
 }
 
 .float-right {
@@ -79,19 +91,14 @@ header .container {
   padding-left: 15px;
   padding-right: 15px;
   color: white;
-  margin: auto;
   max-width: 1200px;
   height: 72px;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 header h1 {
   margin: auto;
-}
-header a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 72px;
 }
 
 @media (max-width: 768px) {
@@ -122,7 +129,6 @@ main {
   z-index: 1;
 }
 .main-title:hover {
-  background-color: var(--main-color-alt);
   -webkit-animation: main-title 1.5s infinite;
           animation: main-title 1.5s infinite;
 }

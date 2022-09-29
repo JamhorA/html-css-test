@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords" content="HTML, CSS">
-        <meta name="description" content="CSS postionerings lärnings uppgift" />
-        <meta name="author" content="Jamhor Ashky">
+        <meta name="author" content="Company">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Company, Contact, Service, Question" />
+        <title>Contact Us</title>
+        <meta name="title" content="Contact Us">
+        <meta name="description" content="Have a question about our company or products?  Contact us 24 hours a day 7 days a week for the best customer service!">
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -16,6 +17,7 @@
         <link rel="stylesheet" href="../css/index.css">
         <link rel="stylesheet" href="../css/hamburger.css">
         <link rel="stylesheet" href="./styles/contact-us.css">
+        <link rel="icon" href="./contact.ico">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Startsida</title>
@@ -29,6 +31,7 @@
     <body>
         <!-- Start Header  -->
         <header>
+            <a href="#contact" class="skip">Skip to contactform</a>
             <div class="container">
                 <h1>LOGO</h1>
                 <input type="checkbox" id="hamburger-input"
@@ -39,10 +42,10 @@
                 <div class="overlay"></div>
                 <nav>
                     <ul>
-                        <li><a class="float-left" href="#home">Home</a></li>
+                        <li><a class="float-left" href="../index.html">Home</a></li>
                         <li><a class="float-left" href="#products">Products</a></li>
                         <li><a class="float-right" href="#blog">Blog</a></li>
-                        <li><a class="float-right" href="#contact">Contact</a></li>
+                        <li><a class="float-right active" href="./contact-us.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -52,25 +55,16 @@
             <section class="head-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <h1 class="display-5 fw-normal text-center">We are
-                                here
-                                for you!</h1>
-                            <hr>
+                        <div class="col-12 text-center">
+                            <h1 class="display-5 fw-normal ">Welcome to our support</h1>
+                                <hr>
+                                <span class="lead fw-normal ">Contact us 24 hours a day 7 days a week for the best customer service!</span>
                         </div>
-                        <div class="col-12">
-                            <p class="lead fw-normal text-center">And an even
-                                wittier
-                                subheading
-                                to boot. Jumpstart your marketing efforts with
-                                this
-                                example based on Apple’s marketing pages.</p>
-                        </div>
-                        <div class="col-12">
+                        <div class="col-12 mt-3">
                             <div>
                                 <div class="link-button">
                                     <a href="#info">Find out
-                                        more</a>
+                                        more about us</a>
                                 </div>
                             </div>
                         </div>
@@ -90,6 +84,9 @@
                     </div>
                 </section>
                 <section class="info-section card-effect">
+                    <ul>
+                        
+                    </ul>
                     <div class="container-fluid marketing my-2 my-sm-4">
                         <div class="row">
                             <div class="col-lg-4 mb-1 mb-sm-3">
@@ -99,8 +96,8 @@
                                         <img class="bd-placeholder-img
                                             rounded-circle svg-xs" width="140"
                                             height="140"
-                                            src="./assets/nedladdning.png"
-                                            alt="">
+                                            src="./assets/checklist.png"
+                                            alt="A picture of a checklist">
                                     </div>
                                     <div class="col-7 col-sm-6 col-md-8
                                         col-lg-12">
@@ -122,8 +119,8 @@
                                         <img class="bd-placeholder-img
                                             rounded-circle svg-xs" width="140"
                                             height="140"
-                                            src="./assets/240_F_97000673_daADJ98liORXceyJrL7aLlN0nir5kPKE.jpg"
-                                            alt="">
+                                            src="./assets/wheels.jpg"
+                                            alt="A picture of gears turning">
                                     </div>
                                     <div class="col-7 col-sm-6 col-md-8
                                         col-lg-12">
@@ -145,8 +142,8 @@
                                         <img class="bd-placeholder-img
                                             rounded-circle svg-xs" width="140"
                                             height="140"
-                                            src="./assets/fast-delivery-icon-free-vector.jpg"
-                                            alt="">
+                                            src="./assets/delivery.jpg"
+                                            alt="A picture of express delivery">
                                     </div>
                                     <div class="col-7 col-sm-6 col-md-8
                                         col-lg-12">
@@ -163,8 +160,8 @@
                             </div><!-- /.col-lg-4 -->
                             <div class="d-none d-md-none d-lg-block my-0 my-sm-5
                                 my-md-3">
-                                <h2 class="fw-normal text-center">Additional
-                                    text that only shows on wide</h2>
+                                <h3 class="fw-normal text-center">Additional
+                                    text that only shows on wide</h3>
                                 <p class="text-center">Lorem ipsum dolor sit
                                     amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ut labore et
@@ -195,16 +192,17 @@
                             <div class="card__image-container">
                                 <img
                                     src="./assets/pexels-torsten-dettlaff-193003.jpg"
-                                    alt="image"
+                                    alt="Picture of our homepage"
                                     />
                             </div>
                             <div class="card__content">
                                 <p class="card__title text--medium">
-                                    Here is the Title of an Awesome Course
+                                    Check out all our content
                                 </p>
                                 <div class="card__info">
-                                    <p class="card__time text--medium">30 Min</p>
-                                    <p class="card__price text--medium">Free</p>
+                                    <div class="card__button link-button text--medium">
+                                        <a href="../index.html">Visit our homepage</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -217,11 +215,12 @@
                             </div>
                             <div class="card__content">
                                 <p class="card__title text--medium">
-                                    Here is the Title of an Awesome Course
+                                    Dont forget to see our quality products
                                 </p>
                                 <div class="card__info">
-                                    <p class="card__time text--medium">30 Min</p>
-                                    <p class="card__price text--medium">Free</p>
+                                    <div class="card__button link-button text--medium">
+                                        <a href="#products">Visit our productpage</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -230,16 +229,15 @@
                             <div class="card__image-container">
                                 <img
                                     src="./assets/pexels-mart-production-7709189.jpg"
-                                    alt="image"
+                                    alt="four people working at desk"
                                     />
                             </div>
                             <div class="card__content">
                                 <p class="card__title text--medium">
-                                    Here is the Title of an Awesome Course
+                                    Our team is always at work to give you the best user experience
                                 </p>
                                 <div class="card__info">
-                                    <p class="card__time text--medium">30 Min</p>
-                                    <p class="card__price text--medium">Free</p>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -247,16 +245,17 @@
                             <div class="card__image-container">
                                 <img
                                     src="./assets/grid-pictures/long-picture.jpg"
-                                    alt="Guy with headphones"
+                                    alt="Guy with headphones sitting on bench"
                                     />
                             </div>
                             <div class="card__content">
                                 <p class="card__title text--medium">
-                                    Here is the Title of an Awesome Course
+                                    Learn more about our community
                                 </p>
                                 <div class="card__info">
-                                    <p class="card__time text--medium">30 Min</p>
-                                    <p class="card__price text--medium">Free</p>
+                                    <div class="card__button link-button text--medium">
+                                        <a href="#blog">Visit our blogpage</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -302,26 +301,21 @@
                                     </div>
                                     <div class="col-md-6 mb-3 mb-lg-0">
 
-                                        <label class="form-label" for="name">Number</label>
-                                        <input class="form-control" id="name"
+                                        <label class="form-label" for="number">Number</label>
+                                        <input class="form-control" id="number"
                                             type="text" placeholder="Number"
-                                            data-sb-validations="required" />
-                                        <div class="invalid-feedback"
-                                            data-sb-feedback="name:required">Name
-                                            is
-                                            required.</div>
-
+                                             />
                                     </div>
                                 </div>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label" for="name">Subject</label>
-                                <input class="form-control" id="name"
+                                <label class="form-label" for="subject">Subject</label>
+                                <input class="form-control" id="subject"
                                     type="text" placeholder="Subject"
                                     data-sb-validations="required" />
                                 <div class="invalid-feedback"
-                                    data-sb-feedback="name:required">Name is
+                                    data-sb-feedback="subject:required">Subject is
                                     required.</div>
                             </div>
 

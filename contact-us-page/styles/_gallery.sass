@@ -20,6 +20,8 @@
     flex-direction: column
     cursor: pointer
     transition: all 0.3s ease 0s
+    &:hover
+      transform: scale(1.04)
 
 
 .long-card
@@ -46,8 +48,6 @@
 
 
 
-.card:hover
-    transform: translateY(-7px)
 
 
 .card__image-container 
@@ -79,11 +79,15 @@
     align-items: center
 
 
-.card__price
-    margin-left: auto
-    padding: 5px 20px
-    background-color: #303032
-    border-radius: 20px
+.card__button
+    margin-left: auto !important
+    margin-right: 0 !important
+    a   
+        margin-left: auto !important
+        padding: 5px 20px !important
+        background-color: #303032
+        border-radius: 20px
+        height: fit-content
 
 
 @media only screen and (max-width: 1000px)
