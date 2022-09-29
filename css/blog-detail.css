@@ -314,6 +314,17 @@
   transition: all, 0.3s;
 }
 
+.blog-form--btn {
+  border: none;
+  color: #fff;
+  background-color: #BD5A42;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+}
+.blog-form--btn:hover {
+  background-color: #3A001E;
+}
 /* end form */
 
 /*******************/
@@ -368,10 +379,29 @@
 .reply {
    font-weight: 500; 
   margin-left: 0.8rem;
-  color: var(--quote-text)
+  color: var(--quote-text);
+  color: #424656;
 }
 
 .reply small:hover {
   color: var(--link-button-text);
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .blog-hero {
+    background-color: #fff;
+  }
+  .hide-element {
+    display: none !important;
+  }
+
+  .blog-details--socialmedia {
+    display: flex;
+    margin-top: -5rem;
+    margin-left: 14rem;
+  }
+  .blog-details--socialmedia ul li {
+    display: inline-block;
+  }
 }
