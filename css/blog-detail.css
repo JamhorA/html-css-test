@@ -388,6 +388,27 @@
   cursor: pointer;
 }
 
+/*******************/
+/***** MODAL *****/
+/*******************/
+.replyModal {
+  background-color: var(--hero-bg)
+}
+
+.replyModal-main {
+  background: #D2D4CA;
+}
+
+.modal-button {
+  background: #4D6970;
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  color: #fff;
+}
+
+/******************/
+/** Screen Sizes **/
+/******************/
 @media screen and (max-width: 600px) {
   .blog-hero {
     background-color: #fff;
