@@ -29,19 +29,23 @@ section {
   min-height: 100vh;
 }
 
-.info-section {
+.about-section {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 @media (max-width: 480px) {
-  .info-section p {
+  .about-section p {
     font-size: 0.9rem;
   }
 }
 
 .gallery-section {
   display: block;
+}
+
+path {
+  fill: black;
 }
 
 .fixed-pos {
@@ -91,12 +95,47 @@ section {
     height: 100px;
   }
 }
+.svg-holder {
+  max-width: 140px;
+  max-height: 140px;
+  margin: auto;
+}
+
+.svg-circle {
+  background-image: linear-gradient(to right bottom, #26a8a4, #0092ad, #007ab0, #005ea6, #483d8b);
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+}
+.svg-circle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6%;
+}
+
 #contactForm {
   max-width: 600px;
   margin: auto;
 }
 #contactForm button {
   background: darkslateblue;
+  filter: brightness(70%);
+}
+#contactForm button:hover {
+  filter: brightness(100%);
+}
+
+.contact-form-title {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 44px;
 }
 
 .text--medium {
@@ -108,7 +147,7 @@ section {
 }
 
 .cards {
-  padding: 60px 0;
+  padding: 20px 0;
   grid-column: 2/span 12;
   display: grid;
   grid-template-columns: repeat(12, minmax(auto, 60px));
@@ -134,7 +173,7 @@ section {
   height: 100%;
 }
 .long-card .card__image-container {
-  height: 100%;
+  height: 400%;
 }
 .long-card img {
   width: auto !important;
@@ -165,6 +204,13 @@ section {
 
 .card__content {
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+.card__content h3 {
+  font-size: 1em;
 }
 
 .card__title {
