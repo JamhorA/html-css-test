@@ -1,0 +1,46 @@
+@import "./_variable"
+@import "./section"
+@import "./svg"
+@import "./contactForm"
+@import "./faq"
+
+body 
+  background: linear-gradient(-30deg, $secondBackgroundColor 0%,#00000a 25%, $mainBackgroundColor 50%,#000000 100% )
+
+.card-effect
+    background: $cardColor
+    @include roundEffect
+
+
+.link-button
+  background: $buttonColor
+  @include flexCenter
+  @include roundEffect
+  width: fit-content
+  margin: auto
+  a
+    @include buttonText
+
+.submit-button
+ background: $buttonColor
+ @include flexCenter
+ @include roundEffect
+ @include buttonText
+
+.skip
+  position: absolute
+  left: -10000px
+  top: auto
+  width: 1px
+  height: 1px
+  overflow: hidden
+ 
+  &:focus 
+    position: static
+    width: auto
+    height: auto
+
+
+
+
+
