@@ -22,9 +22,6 @@ body {
 a {
   text-decoration: none;
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 a:hover {
   background-color: darkslateblue;
@@ -60,6 +57,9 @@ nav ul {
 nav a {
   height: 72px;
   padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav .active {
   background-color: darkslateblue;
