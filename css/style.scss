@@ -1,0 +1,20 @@
+$color-primary: #e9e9eb;
+
+body {
+    background-color: $color-primary;
+}
+.gallery .box {
+    background-color: $color-primary;   
+}
+.articels .box {
+    background-color: $color-primary;
+}
+.construction {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    img {
+    max-width: 600px;
+    width: 100%;
+}
+}
