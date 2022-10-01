@@ -1,0 +1,21 @@
+body {
+  background-color: #e9e9eb;
+}
+
+.gallery .box {
+  background-color: #e9e9eb;
+}
+
+.articels .box {
+  background-color: #e9e9eb;
+}
+
+.construction {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.construction img {
+  max-width: 600px;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

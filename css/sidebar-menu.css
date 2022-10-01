@@ -73,7 +73,8 @@
 }
 
 #sidebar-menu a:hover {
-    text-decoration: underline;
+    border-bottom: solid 3px white;
+    padding-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
