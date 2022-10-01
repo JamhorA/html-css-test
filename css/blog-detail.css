@@ -83,7 +83,9 @@
   border-radius: 0.4rem;
 
 }
-
+.blog-details--heroimg {
+  filter: brightness(.6);
+}
 /* Social Media*/
 .blog-details--socialmedia {
   text-align: center;
@@ -404,6 +406,12 @@
   padding: 0.6rem 1rem;
   border-radius: 0.3rem;
   color: #fff;
+}
+
+.modal-body {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 /******************/
