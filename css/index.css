@@ -444,7 +444,10 @@ main {
 }
 /* End Gallery */
 /* Start Footer  */
-.footer {
+footer .box h3 img {
+    max-width: 142px;
+}
+footer {
     background-color: black;
     padding: 70px 0 0;
     text-align: center;
@@ -462,14 +465,14 @@ main {
     max-width: 1200px;
 }
 
-.footer .box h3 {
+footer .box h3 {
     color: white;
     font-size: 30px;
     margin: 0 0 20px;
 
 }
 
-.footer .box h4 {
+footer .box h4 {
     color: white;
     font-size: 20px;
     margin: 0 0 20px;
@@ -477,18 +480,18 @@ main {
 
 }
 
-.footer .box .social {
+footer .box .social {
     display: flex;
     padding: 40px;
 
 }
 
-.footer .box .social li {
+footer .box .social li {
     margin-right: 10px;
 
 }
 
-.footer .box .social li a {
+footer .box .social li a {
     color: white;
     display: inline-flex;
     justify-content: center;
@@ -498,56 +501,56 @@ main {
     font-size: 30px;
 }
 
-.footer .box .text {
+footer .box .text {
     line-height: 2;
     color: aliceblue;
 }
 
-.footer .box .links li {
+footer .box .links li {
     padding: 15px 0;
 }
 
-.footer .box .links li:not(:last-child) {
+footer .box .links li:not(:last-child) {
     border-bottom: 1px solid rgba(255, 218, 185, 0.5);
 }
 
-.footer .box .links li:hover {
+footer .box .links li:hover {
     padding-left: 10px;
     color: white;
 }
 
-.footer .box .links li:hover a {
+footer .box .links li:hover a {
     color: white;
 }
 
-.footer .box .links li a {
+footer .box .links li a {
     color: #b9b9b9;
 }
 
-.footer .box .line {
+footer .box .line {
     display: flex;
     align-items: center;
     color: #b9b9b9;
     margin-bottom: 30px;
 }
 
-.footer .box .line i {
+footer .box .line i {
     font-size: 25px;
     color: white;
     margin-right: 10px;
 
 }
 
-.footer .box .line .info {
+footer .box .line .info {
     line-height: 1.7;
     flex: 1;
 }
 
-.footer .box .line .info span {
+footer .box .line .info span {
     display: block;
 }
 
-.footer .copyright {
+footer .copyright {
     padding: 25px 0;
     text-align: center;
     color: white;
