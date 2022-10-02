@@ -1,0 +1,21 @@
+# John
+
+- wireframes för footer och navbar
+- wireframes för contact us page
+- css & html för navbar & content på contact us page
+
+# Jamhor
+
+- byggde homepage
+- wireframes för homepage content
+- svg logo
+
+# Per
+
+- byggde product page
+- wireframes för product page content
+
+# Leon
+
+- byggde blog page
+- wireframes för blog page content
